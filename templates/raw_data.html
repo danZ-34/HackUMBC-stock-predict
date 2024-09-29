@@ -1,0 +1,14 @@
+<!DOCTPE html>
+<html>
+    <head>
+        <title>Raw Data of Stock History</title>
+    </head>
+
+    <body>
+        <h2>Raw Data on the Stock History</h2>
+        <div>{{ stock_data_html | safe }}</div>
+
+        <h2>Plotted Data on Stock History</h2>
+        <img src="data:image/png;base64,{{plot_base64}}" alt="Plot for Stock">
+    </body>
+</html>
